@@ -4,8 +4,7 @@
     font-family: "Roboto", sans-serif;
     font-size: 16 px;
     background-color: rgb(106,138,176);
-    color: #fff;
-    
+    color: #fff;    
 }
 .header{
     width: auto;
@@ -16,9 +15,7 @@
     justify-content:center;
     background-color: rgb(106,139,176);
     font-family: "Teko",sans-serif;
-    padding:1px;
-    
-      
+    padding:1px;     
 }
 .header-first{
     box-shadow: 2px 2px rgb(89,117,151);
@@ -86,7 +83,6 @@ small{
     margin: 2px;
     position: relative;
 }
-
 .img-arrow-first{
     width: 45px;
     height: 35px;
@@ -153,12 +149,10 @@ small{
 .actually-launch{
     width: 33%;
     box-shadow: 2px 2px rgb(89,117,151);
-    background: linear-gradient(180deg, rgba(82,112,144,80%) ,rgba(147,180,213,50%))
-    ;
+    background: linear-gradient(180deg, rgba(82,112,144,80%) ,rgba(147,180,213,50%));
     padding-left: 5%;
     padding-top: 5px;
-    
-    }
+}
 .next{
     font-size: 10px;
     color: rgb(177,200,213);
@@ -179,7 +173,6 @@ small{
     margin-left:6px;
     margin-top: 11px
 }
-
 .launch-time{
     font-size:25px;  
 }
@@ -193,7 +186,7 @@ small{
 }
 .target{
     width: 33%;
-    box-shadow: 2px 2px rgb(89,117,151);
+    box-shadow: 2px rgb(89,117,151);
     background: linear-gradient(180deg, rgba(82,112,144,80%) ,rgba(147,180,213,50%));
     padding-left: 7%;
     padding-top: 8px;
@@ -225,8 +218,7 @@ small{
 #alarms-second,#alarms-third{
     font-family: "Teko",sans-serif;
     font-size: 30px;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
 }
 #alarms-second{
     margin-right: 50%;
@@ -235,8 +227,7 @@ small{
     height: 50px;
     width: 35px;
     margin-left: 15px;
-    top: 40%;
-    
+    top: 40%;    
 }
 .arrivalinfo{
     width: auto;
@@ -263,8 +254,7 @@ small{
 }
 #preparingtime{
     margin-right: 20px;
-    margin-left: 5%;
-    
+    margin-left: 5%;   
 }
 .grey{
     font-size: 12px;
@@ -277,7 +267,6 @@ small{
 .whitetime{
     color: white;
 }
-
 .greysmall{
     font-size: 12px;
     color: rgb(177,200,213);
@@ -292,8 +281,7 @@ small{
     box-shadow: 2px 2px rgb(89,117,151);
     background: linear-gradient(180deg, rgba(118,145,185,80%),rgba(82,112,144,95%));
     height: auto;
-    margin: 2px;
-    
+    margin: 2px;  
 }
 #second-launch-time{
     margin-right: 16px;
@@ -442,9 +430,8 @@ small{
     position: relative;
     background: rgb(96,128,163);
     border: 2px solid rgb(106,138,176);
-    box-shadow: 2px 1px rgb(89,117,151);
-    font-weight: 600;
-    
+    box-shadow: 1px rgb(89,117,151);
+    font-weight: 600; 
 }
 .row{
     font-size: 12px;
@@ -562,7 +549,6 @@ small{
 .block2b{
     width: 56px;
     left: 22%;  
-   
 }
 .block3b{
     width: 40px;

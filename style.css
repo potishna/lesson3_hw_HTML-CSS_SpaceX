@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Teko:300|Roboto:300');
 .container{
-    width: 800px;
+    width: 100%;
     font-family: "Roboto", sans-serif;
     font-size: 16 px;
     background-color: rgb(106,138,176);
@@ -8,30 +8,32 @@
 }
 .header{
     width: auto;
+    height: 90px;
     display: flex;
     flex-grow: 1;
     margin:2px;
     flex-direction: row;
-    justify-content:center;
+    justify-content: space-evenly;
     background-color: rgb(106,139,176);
     font-family: "Teko",sans-serif;
     padding:1px;     
 }
-.header-first{
+.header-first,.header-second,.header-third,.header-fourth,.header-fifth{
     box-shadow: 2px 2px rgb(89,117,151);
-    background: rgb(147,180,213);
-    font-size: 9px;
-    width: 178px;
+    width: 20%;
     padding-left: 20px;
     margin: 2px;
     
 }
+.header-first{
+    background: rgb(147,180,213);
+}
 small{
-    font-size: 15px;
+    font-size: 20px;
 }
 .block-title{
     text-transform: uppercase;
-    font-size: 22px; 
+    font-size: 30px; 
 }
 .header-second::after{
     content: '';
@@ -43,26 +45,15 @@ small{
     left: 65%;
 }
 .header-second{ 
-    box-shadow: 2px 2px rgb(89,117,151);
     background: linear-gradient(180deg, rgba(147,180,213,80%) ,rgba(107,136,174,50%));
-    font-size: 9px;
-    padding-left: 20px;
-    width: 178px;
-    margin: 2px;
     position: relative;
 }
-
 .m{
     color: aqua;
     text-transform:lowercase;
 }
 .header-third{
-     box-shadow: 2px 2px rgb(89,117,151);
-     background: linear-gradient(180deg, rgba(147,180,213,80%) ,rgba(107,136,174,95%));
-    font-size: 9px;
-    padding-left: 20px;
-    width: 178px;
-    margin: 2px;
+    background: linear-gradient(180deg, rgba(147,180,213,80%) ,rgba(107,136,174,95%));
     position: relative;
 }
 .header-third::after{
@@ -75,12 +66,7 @@ small{
     left: 65%;
 }
 .header-fourth{ 
-    box-shadow: 2px 2px rgb(89,117,151);
-     background: linear-gradient(180deg, rgba(147,180,213,80%) ,rgba(107,136,174,95%));
-    font-size: 9px;
-    padding-left: 20px;
-    width: 178px;
-    margin: 2px;
+    background: linear-gradient(180deg, rgba(147,180,213,80%) ,rgba(107,136,174,95%));
     position: relative;
 }
 .img-arrow-first{
@@ -91,48 +77,44 @@ small{
     left: 65%
 }
 .header-fifth{
-    box-shadow: 2px 2px rgb(89,117,151);
     background: linear-gradient(180deg, rgba(147,180,213,80%) ,rgba(107,136,174,95%));
-    font-size: 9px;
-    padding-left: 20px;
-    width: 178px;
-    margin: 2px;
     position: relative;
 }
 .mainimg{
-    width: auto;
+    background-image:url(img/earth-from-space.jpg);
+    background-size:cover;
+    height: 550px;
 }
 .actually-data{
-    width: auto;
-    height: 110px;
+    width: 100%;
+    height: 150px;
     display: flex;
     flex-direction: row;   
+    align-items: center;
 }
 .first-data{
+    display: flex;
+    flex-direction: column;
     width: 30%;
     box-shadow: 2px 2px rgb(89,117,151);
     background: linear-gradient(180deg, rgba(118,145,185,80%),rgba(82,112,144,95%));
-    height: auto; 
-}
-#day{
-    margin-left: 10%;
-    font-size: 10px;
-    
+    height: 100%; 
+    padding-left: 3%;
+    justify-content: center
 }
 .actually-time{
+    margin-top: -15px;
     font-family: "Teko",sans-serif;
-    font-size: 75px;
-    margin-left: 10%;
-    margin-top: -5%;
+    font-size: 100px;
+    height: 100px; 
 }
-
-
 .actually-scheme{
     width: 70%;
     display: flex;
     flex-grow: 1;
     flex-direction: row;
-    height: auto;
+    justify-content: center;
+    height: 100%;
     line-height: 170%
 }
 .scheme{
@@ -141,25 +123,23 @@ small{
     background: linear-gradient(180deg, rgba(82,112,144,80%) ,rgba(147,180,213,50%));   
 }  
 .img-scheme{
-    width: 100px;
-    height: 80px;
+    width: 50%;
+    height: 70%;
     margin-left: 15%; 
-    margin-top: 10px;
+    margin-top: 10%;
 }
 .actually-launch{
     width: 33%;
     box-shadow: 2px 2px rgb(89,117,151);
     background: linear-gradient(180deg, rgba(82,112,144,80%) ,rgba(147,180,213,50%));
     padding-left: 5%;
-    padding-top: 5px;
+    padding-top: 4%;
 }
 .next{
-    font-size: 10px;
     color: rgb(177,200,213);
     margin-right: 30px;
 }
 .enabled{
-    font-size: 10px;
     color: aqua;
     position: relative;
 }
@@ -174,10 +154,12 @@ small{
     margin-top: 11px
 }
 .launch-time{
-    font-size:25px;  
+    font-size:40px; 
+    margin-top:1%;
+    margin-bottom:1%;
 }
-#secday,#seclaunch-time{
-    font-size: 10px;
+#second-day,#second-launch-time{
+    
     color: rgb(177,200,213); 
     text-transform:uppercase; 
 }
@@ -185,17 +167,18 @@ small{
     margin-right: 30px;   
 }
 .target{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
     width: 33%;
     box-shadow: 2px rgb(89,117,151);
     background: linear-gradient(180deg, rgba(82,112,144,80%) ,rgba(147,180,213,50%));
-    padding-left: 7%;
-    padding-top: 8px;
+    padding-left: 7%;  
 }
 #m2{
     font-size: 18px;
 }
 .enabled-style{
-    font-size: 10px;
     color: aqua;
 }
 .alarms{
@@ -210,18 +193,18 @@ small{
     color: rgb(189,230,242);
 }
 #alarms-first{
-    font-size: 60px;
+    font-size: 65px;
     font-family: "Teko",sans-serif;
     margin-left: 3%;
     margin-right: 3%;
 }
 #alarms-second,#alarms-third{
     font-family: "Teko",sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;   
 }
 #alarms-second{
-    margin-right: 50%;
+    margin-right: 60%;
 }
 #check_mark{
     height: 50px;
@@ -240,24 +223,21 @@ small{
     width: 50%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 .preparing{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     width: auto;
     box-shadow: 2px 2px rgb(89,117,151);
     background: linear-gradient(180deg, rgba(118,145,185,80%),rgba(82,112,144,95%));
     height: 50%;
     margin: 2px;
 }
-#preparingtime{
-    margin-right: 20px;
-    margin-left: 5%;   
-}
 .grey{
-    font-size: 12px;
+    
     color: rgb(177,200,213); 
     text-transform:uppercase; 
 }
@@ -268,7 +248,6 @@ small{
     color: white;
 }
 .greysmall{
-    font-size: 12px;
     color: rgb(177,200,213);
     margin-right: 79px;
     margin-left:-9px;
@@ -286,35 +265,37 @@ small{
 #second-launch-time{
     margin-right: 16px;
 }
-.first-conditions{
+.first-condition{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: auto;
+    justify-content: space-around;
+    width: 100%;
     height: 50%;
     position: relative;
 }
-.first-conditions::after{
+.first-condition::after{
     content: '';
     position: absolute;
+    justify-content: center;
     height: 3px;
-    width: 100%;
+    width: 80%;
     background: rgb(77,107,137);
     top: 98%;
-    left: 15px;
 }
-.second-conditions{
+.second-condition{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 50%;
     position: relative; 
 }
 .current{
-    margin-left: 9%;
-    font-size: 12px;
-    margin-right: 38%
+    display: flex;
+    flex-direction: column;
+    margin-right: 35%;
 }
 #currentsmall{
     color: aqua;
@@ -324,7 +305,7 @@ small{
     flex-direction:row;
     align-items: center; 
     justify-content: space-between;
-    padding-left: 15px;
+    padding-left: 3%;
     padding-right: 36px;
     background: rgb(99,131,167);
     flex-basis: auto;
@@ -352,7 +333,6 @@ small{
     display: flex;
     flex-direction:row;
     align-items: center; 
-    padding-right: 40px;
     background: rgb(97,127,163);   
     height: 150px;
     margin: 2px;
@@ -361,21 +341,25 @@ small{
 .timemonitoring{
     display: flex;
     flex-direction: column;
-    align-items: center;
+   align-items: center;
     line-height: 2;
     font-size: 16px; 
     color: rgb(177,200,213); 
     text-transform: uppercase;
-    width: 12%;
+    width: 10%;
 }
-#scrolling_img{
-    height: 120px;
-    width:4%;
-    margin-right: 4%;
+.scrolling_img{
+    display: flex;
+    align-items: center;
+    height: 75%;
+    width: 2%;
 }
+
 .proces-monitoring{
     display: flex;
     flex-direction:column;
+    margin-left: 4%;
+    width: 81%;
 }
 .proces-monitoring-first{
     position: relative;  
@@ -388,8 +372,8 @@ small{
     margin-bottom: 5px;
 }
 .go_no{
-    flex-basis: 250px;
-    margin-right: 350px;   
+    flex-basis: 50%;
+    margin-right: 50%;   
 }
 .proces-monitoring-first::after{
     content: '';
@@ -404,12 +388,14 @@ small{
     display: flex;
     flex-direction: row;
     background: rgb(127,158,200);
-    height: 25px;
+    height: 35px;
     align-items: center;
 }
 .operation-first,.operation-second{
+    display: flex;
     padding-left: 10px;
-    height: 25px;
+    height: 100%;
+    
 }
 .operation-first{
     position: relative;
@@ -434,24 +420,23 @@ small{
     font-weight: 600; 
 }
 .row{
-    font-size: 12px;
     display: flex;
     flex-direction: row;
-    height: 25px;
-    text-align: justify;
+    height: 40px;
 }
 .row-first{  
+    display: flex;
     padding-left: 8px;
-    width: 90px; 
+    width: 10%; 
     border-right: 3px solid rgb(84,109,154) ;
     border-bottom: 3px solid rgb(84,109,154) ;
     z-index: 3;
+    align-items: center;
 }
 .stage-num{
     display: flex;
     flex-direction: row;
     font-family: "Teko", sans-serif;
-    font-size: 12px;
     align-items: center;
     font-weight: 100;
 }
@@ -461,8 +446,8 @@ small{
 }
 .block1,.block2,.block3,.block4,.block5,.block6,.block7{
     position: absolute;
-    height: 16px;
-    width: 14px;
+    height: 27px;
+    width: 22px;
     background: rgb(147,180,213);
     margin-top: 3px;
     margin-bottom: 3px;
@@ -492,82 +477,79 @@ small{
 }
 .block1a,.block2a,.block-cursor,.block3a,.block4a,.block5a,.block6a,.block7a{
     position: absolute;
-    height: 16px;
+    height: 27px;
     background: rgb(147,180,213);
     margin-top: 3px;
     margin-bottom: 3px;
-    transition: all 2s  linear;
+    transition: all 1s  linear;
 }
 .block1a{
-    width: 32px;
+    width: 55px;
     left: 11%;
 }
 .block2a{
-    width: 37px;
-    left: 17%;  
+    width: 65px;
+    left: 18%;  
     z-index:2;
 }
 .block-cursor{
     background: rgb(137,241,245);
-    width: 37px;
-    left: 34%;
+    width: 70px;
+    left: 33%;
 }
 .block3a{
-    width: 26px;
+    width: 40px;
     left: 43%;  
 }
 .block4a{
-    width: 45px;
+    width: 63px;
     left: 58%;  
 }
 
 .block5a{
-    width: 26px;
-    left: 65%;  
+    width: 36px;
+    left: 64%;  
 }
 .block6a{
-    width: 39px;
+    width: 59px;
     left: 88%;  
 }
 
 .block7a{
-    width: 34px;
-    left: 95%;  
+    width: 60px;
+    left: 94%;  
 }
 .block1b,.block2b,.block3b,.block4b,.block5b,.block6b{
     position: absolute;
-    height: 16px;
+    height: 27px;
     background: rgb(147,180,213);
     margin-top: 3px;
     margin-bottom: 3px;
-    transition: all 2s  linear;
+    transition: all 1s  linear;
 }
 .block1b{
-    width: 55px;
+    width: 97px;
     left: 12%;
 }
 .block2b{
-    width: 56px;
+    width: 90px;
     left: 22%;  
 }
 .block3b{
-    width: 40px;
+    width: 65px;
     left: 32%;
-     z-index:2;
 }
 .block4b{
-    width: 65px;
+    width:115px;
     left: 39%;
-     z-index:2;
 }
 .block5b{
-    width: 51px;
-    left: 52%;
+    width: 95px;
+    left: 51%;
 }
 .block6b{
-    width: 95px;
+    width: 145px;
     left: 60%;
-    z-index:2;
 }
 .cursor{
     position: absolute;
@@ -586,10 +568,12 @@ background:rgb(137,241,245);
 .scrollpanel{
     background: rgb(127,158,200);
     width: 100%;
-    height: 21px;
+    height: 30px;
 }
-#scroll {      background:rgb(137,241,245);
+#scroll {
+    background:rgb(137,241,245);
     width: 25%;
-    height:21px;
+    height:96%;
+    margin-top: 2px;
     transition: all 1s linear;
 }
